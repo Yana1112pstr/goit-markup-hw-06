@@ -756,10 +756,22 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
+    transition: border-color var(--animation);
+}
+
+.modal-form-coment:focus {
+    border-color: var(--accent-color);
 }
 
 .visually-hidden {
-    opacity: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .checkbox-label::before {
@@ -770,9 +782,19 @@ img {
     border-radius: 3px;
     display: inline-block;
     margin-right: 7px;
+    transition: var(--animation);
 }
 
 .checkbox:checked + .checkbox-label::before{
+    background-image: url(../images/icons/checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.checkbox:focus + .checkbox-label::before{
     background-image: url(../images/icons/checkbox.svg);
     background-repeat: no-repeat;
     background-position: center;
