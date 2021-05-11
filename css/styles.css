@@ -745,6 +745,10 @@ img {
     border-color: var(--accent-color);
 }
 
+.modal-form-input:focus .modal-form-svg {
+    fill: var(--accent-color);
+}
+
 .form-place-textarea {
     margin-bottom: 20px;
 }
