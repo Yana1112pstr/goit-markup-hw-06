@@ -704,6 +704,7 @@ img {
 
 .form-place-input {
     margin-bottom: 10px;
+    position: relative;
 }
 
 .label-text {
@@ -715,14 +716,10 @@ img {
     color: var(--main-text-color);    
 }
 
-.form-input-svg {
-    position: relative;
-}
-
 .modal-form-svg {
     position: absolute;
+    top: 50%;
     left: 12px;
-    top: 11px;
     width: 18px;
     height: 18px;
 
