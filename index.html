@@ -401,38 +401,34 @@
             </h2>
             <form>
                 <div class="form-place-input">
-                    <label> <span class="label-text">Имя</span>
-                        <input type="text" name="user-name" class="modal-form-input"/>
-                        <svg class="modal-form-svg">
-                            <use href="./images/icons/sprite.svg#icon-person-modal"></use>
-                        </svg>
-                    </label>
+                    <label class="label-text" for="form-input"> Имя </label>
+                    <input type="text" name="user-name" id="form-input" class="modal-form-input"/>
+                    <svg class="modal-form-svg">
+                        <use href="./images/icons/sprite.svg#icon-person-modal"></use>
+                    </svg>
                 </div>
                 <div class="form-place-input">
-                    <label> <span class="label-text">Телефон</span>
-                        <input type="tel" name="user-phone" pattern="[0-9]{10}" class="modal-form-input"/>
-                        <svg class="modal-form-svg">
-                            <use href="./images/icons/sprite.svg#icon-phone-modal"></use>
-                        </svg>
-                    </label>
+                    <label class="label-text" for="form-input"> Телефон </label>
+                    <input type="tel" name="user-phone" pattern="[0-9]{10}" id="form-input" class="modal-form-input"/>
+                    <svg class="modal-form-svg">
+                        <use href="./images/icons/sprite.svg#icon-phone-modal"></use>
+                    </svg>
                 </div>
                 <div class="form-place-input">
-                    <label> <span class="label-text">Почта</span>
-                        <input type="email" name="user-email" class="modal-form-input"/>
-                        <svg class="modal-form-svg">
-                            <use href="./images/icons/sprite.svg#icon-email-modal"></use>
-                        </svg>
-                    </label>
+                    <label class="label-text" for="form-input"> Почта </label>
+                    <input type="email" name="user-email" id="form-input" class="modal-form-input"/>
+                    <svg class="modal-form-svg">
+                        <use href="./images/icons/sprite.svg#icon-email-modal"></use>
+                    </svg>
                 </div>
-                <div class="form-place-textarea">
-                    <label> <span class="label-text">Комментарий</span>
-                        <textarea name="user-coment" rows="3" class="modal-form-coment" placeholder="Введите тест"></textarea>
-                    </label>
+                <div class="textarea">
+                    <label class="label-text" for="form-textarea"> Комментарий </label>
+                    <textarea name="user-coment" id="form-textarea" class="textarea-form" placeholder="Введите тест"></textarea>
                 </div>
-                <div>
-                    <input type="checkbox" name="user-checkbox" class="visually-hidden checkbox" id="checkbox">
+                <div class="checkbox">
+                    <input type="checkbox" name="user-checkbox" class="visually-hidden checkbox-input" id="checkbox">
                     <label for="checkbox" class="checkbox-label">Соглашаюсь с рассылкой и принимаю 
-                        <a href="#" class="checkbox-link">Условия договора</a>
+                        <a href="#"  target="_blank" rel="noreferrer noopener" class="checkbox-link">Условия договора</a>
                     </label>
                 </div>
                 <div class="form-btn">
